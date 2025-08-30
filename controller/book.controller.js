@@ -50,7 +50,6 @@ export const getBookSummary = async (req, res) => {
         }
 
         // 3. Call DeepSeek R1 (0528 free version) via OpenRouter
-        console.log(process.env.OPENROUTER_API_KEY)
         const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
             method: "POST",
             headers: {
